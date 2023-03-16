@@ -1,0 +1,46 @@
+// Zed settings
+{
+  // Analytics
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "auto_update": false,
+  // Theme / font
+  "theme": "Atelier Forest Light",
+  "buffer_font_size": 14,
+  // "buffer_font_family": "Fira Code",
+  // Tabs / wrapping
+  "tab_size": 2,
+  "soft_wrap": "editor_width",
+  // Git
+  "git": {
+    "git_gutter": "tracked_files"
+  },
+  // Formatting
+  "format_on_save": "on",
+  "language_overrides": {
+    "JavaScript": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": [
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
+        }
+      }
+    },
+    "TypeScript": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": [
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
+        }
+      }
+    }
+  }
+}
